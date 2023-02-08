@@ -1,0 +1,12 @@
+diff -ruNp quapps.orig/quapps.pro quapps/quapps.pro
+--- quapps.orig/quapps.pro	2023-02-21 12:45:34.255709152 +0000
++++ quapps/quapps.pro	2023-02-21 12:46:07.391408171 +0000
+@@ -62,7 +62,6 @@ inst.files = $${HEADERS} $${DISTFILES}
+ inst.path = $${INSTALL_ROOT}/include/quapps
+ target.path = /tmp
+ 
+-INSTALLS += inst target
+-
++INSTALLS += inst
+ 
+ 

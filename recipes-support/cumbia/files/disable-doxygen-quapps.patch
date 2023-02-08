@@ -1,0 +1,24 @@
+diff -ruNp quapps.orig/quapps.pro quapps/quapps.pro
+--- quapps.orig/quapps.pro	2023-02-21 12:39:41.075075629 +0000
++++ quapps/quapps.pro	2023-02-21 12:40:31.238575585 +0000
+@@ -58,19 +58,11 @@ DISTFILES += \
+ SOURCES += dummy.cpp
+ TARGET = bin/dummy
+ 
+-doc.commands = \
+-doxygen \
+-Doxyfile;
+-
+-doc.files = doc/*
+-doc.path = $${DOCDIR}
+-QMAKE_EXTRA_TARGETS += doc
+-
+ inst.files = $${HEADERS} $${DISTFILES}
+ inst.path = $${INSTALL_ROOT}/include/quapps
+ target.path = /tmp
+ 
+-INSTALLS += inst doc target
++INSTALLS += inst target
+ 
+ 
+ 

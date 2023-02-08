@@ -1,0 +1,12 @@
+diff -ruNp qumbia-tango-controls.orig/src/cutangoregisterengine.cpp qumbia-tango-controls/src/cutangoregisterengine.cpp
+--- qumbia-tango-controls.orig/src/cutangoregisterengine.cpp	2023-02-20 21:40:05.630159584 +0000
++++ qumbia-tango-controls/src/cutangoregisterengine.cpp	2023-02-20 21:41:04.289660368 +0000
+@@ -2,7 +2,7 @@
+ #include "cutcontrolswriter.h"
+ #include <cutthread.h>
+ #include <qthreadseventbridge.h>
+-#include <cutcontrolsreader.h>
++#include "cutcontrolsreader.h"
+ #include <cutango-world.h>
+ #include <qthreadseventbridgefactory.h>
+ 

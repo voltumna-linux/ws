@@ -1,0 +1,15 @@
+diff -ruNp qumbia-tango-controls.orig/qumbia-tango-controls.pro qumbia-tango-controls/qumbia-tango-controls.pro
+--- qumbia-tango-controls.orig/qumbia-tango-controls.pro	2023-02-20 21:40:05.626159618 +0000
++++ qumbia-tango-controls/qumbia-tango-controls.pro	2023-02-20 21:42:25.829080229 +0000
+@@ -62,11 +62,6 @@ DISTFILES += \
+     src/tutorial_faq.md
+ 
+ unix {
+-    doc.commands = doxygen Doxyfile;
+-    doc.files = doc/*
+-    doc.path = $${QUMBIA_TANGO_CONTROLS_DOCDIR}
+-    QMAKE_EXTRA_TARGETS += doc
+-
+     inc.files = $${HEADERS}
+ 
+     inc.path = $${QUMBIA_TANGO_CONTROLS_INCLUDES}

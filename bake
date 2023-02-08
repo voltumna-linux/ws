@@ -1,0 +1,4 @@
+MACHINE="kvm-nehalem"
+nice bitbake -k ws-sde || return
+SDKMACHINE="x86_64"
+nice bitbake -k ws-sdk -c populate_sdk || return

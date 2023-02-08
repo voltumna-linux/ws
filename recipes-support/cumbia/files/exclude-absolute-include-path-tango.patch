@@ -1,0 +1,12 @@
+diff -ruNp cumbia-tango.orig/meson.build cumbia-tango/meson.build
+--- cumbia-tango.orig/meson.build	2023-02-20 21:25:49.625734314 +0000
++++ cumbia-tango/meson.build	2023-02-20 21:26:55.993114048 +0000
+@@ -112,7 +112,7 @@ tgdep = dependency('tango', method: 'pkg
+ tginc = tgdep.get_pkgconfig_variable('includedir')
+ 
+ # add tginc to include dirs
+-includedirs = [ include_directories('lib'), include_directories(tginc) ]
++includedirs = [ include_directories('lib') ]
+ 
+ deps = [ dependency('threads'), dependency('cumbia'), tgdep ]
+ 

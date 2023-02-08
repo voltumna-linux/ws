@@ -1,0 +1,19 @@
+diff -ruNp cuuimake.orig/cuuimake.pro cuuimake/cuuimake.pro
+--- cuuimake.orig/cuuimake.pro	2023-02-21 11:08:16.248644410 +0000
++++ cuuimake/cuuimake.pro	2023-02-21 11:08:55.932229070 +0000
+@@ -99,14 +99,5 @@ target.path = $${INSTALL_ROOT}/bin
+ conf.path = $${INSTALL_ROOT}/share/cuuimake
+ conf.files = cuuimake-cumbia-qtcontrols.xml
+ 
+-doc.commands = \
+-doxygen \
+-Doxyfile;
+-
+-doc.files = doc/*
+-doc.path = $${DOCDIR}
+-
+-QMAKE_EXTRA_TARGETS += doc
+-
+-INSTALLS += target conf doc
++INSTALLS += target conf
+ 
