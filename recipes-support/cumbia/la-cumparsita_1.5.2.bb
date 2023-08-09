@@ -1,12 +1,11 @@
 include cumbia.inc
 
-DEPENDS = "qtxmlpatterns"
+DEPENDS = "cumbia cumbia-qtcontrols"
 
-EXTRA_QMAKEVARS_PRE += "INSTALL_ROOT=${prefix}"
+EXTRA_QMAKEVARS_PRE += "INSTALL_ROOT=${RECIPE_SYSROOT}${prefix}"
 
 SRC_URI = "git://github.com/ELETTRA-SincrotroneTrieste/cumbia-libs.git;protocol=https;branch=master;subpath=qumbia-apps/${BPN} \
-	file://disable-doxygen-cuuimake.patch \
-"
+	file://disable-doxygen-la-cumparsita.patch"
 
 S = "${WORKDIR}/${BPN}"
 

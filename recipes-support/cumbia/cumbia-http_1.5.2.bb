@@ -1,6 +1,6 @@
 include cumbia.inc
 
-DEPENDS = "cumbia-qtcontrols qtnetworkauth qtwebsockets"
+DEPENDS = "doxygen-native cumbia-qtcontrols qtnetworkauth qtwebsockets"
 
 EXTRA_QMAKEVARS_PRE += "INSTALL_ROOT=${prefix} QT_NO_WIDGETS=1"
 

@@ -5,4 +5,4 @@ LICENSE = "GPL-3.0-only"
 
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/GPL-3.0-only;md5=c79ff39f19dfec6d293b95dea7b07891"
 
-SRCREV = "f02402a9812622f66ba4a0ac399e9faa77272837"
+SRCREV = "660f1e9e867169ce6b78771d82edbd473c33d197"

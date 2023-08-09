@@ -1,6 +1,6 @@
 include cumbia.inc
 
-DEPENDS = "cumbia-tango cumbia-qtcontrols"
+DEPENDS = "doxygen-native cumbia-tango cumbia-qtcontrols"
 
 EXTRA_QMAKEVARS_PRE += "INSTALL_ROOT=${prefix}"
 

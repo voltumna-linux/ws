@@ -1,0 +1,26 @@
+diff --git a/la-cumparsita.pro b/la-cumparsita.pro
+index 2463afaacd..4ed547f9e9 100644
+--- a/la-cumparsita.pro
++++ b/la-cumparsita.pro
+@@ -86,13 +86,14 @@ DISTFILES += \
+ 
+ target.path = $${INSTALL_ROOT}/bin
+ 
+-doc.commands = \
+-doxygen \
+-Doxyfile;
++# doc.commands = \
++# doxygen \
++# Doxyfile;
+ 
+-doc.files = doc/*
+-doc.path = $${DOCDIR}
++# doc.files = doc/*
++# doc.path = $${DOCDIR}
+ 
+-QMAKE_EXTRA_TARGETS += doc
++# QMAKE_EXTRA_TARGETS += doc
+ 
+-INSTALLS += target doc
++# INSTALLS += target doc
++INSTALLS += target
